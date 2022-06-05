@@ -54,7 +54,14 @@ print(vocalesMayusculas)
 # Ejercicio 4
 # Dada una lista de numeros, mostrar por genere una lista con todos los múltiplos de 7.
 # Por ejemplo, para la lista `[1, 2, 7, 10, 21]`, se muestran por pantalla los numeros `7` y `21`
+listaA = [1,2,7,10,21]
+listaB = []
 
+for n in listaA:
+    if n % 7 == 0:
+        listaB.append(n)
+
+print(listaB)
 
 # Ejercicio 5
 # Contar cuántos elementos de la lista cumple alguna de las siguientes condiciones:
