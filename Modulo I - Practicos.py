@@ -39,7 +39,18 @@ print(listaB)
 # 'A']`
 # Pistas:
 # - Utilizar funciones propias de strings como `upper`, `lower`
+palabra1 = 'Este es un string de prueba'
+palabra1_mayus = palabra1.upper()
 
+vocales1 = ['A','E','I','O','U']
+vocalesMayusculas = []
+
+for letra in palabra1_mayus:
+    for x in vocales1:
+        if letra == x :
+            vocalesMayusculas.append(letra)
+
+print(vocalesMayusculas)
 # Ejercicio 4
 # Dada una lista de numeros, mostrar por genere una lista con todos los múltiplos de 7.
 # Por ejemplo, para la lista `[1, 2, 7, 10, 21]`, se muestran por pantalla los numeros `7` y `21`
