@@ -20,6 +20,18 @@ else:
 # Dada una lista de números, se pide iterar los elementos de la lista y almacenar en otra lista el resultado de sumar
 # ese elemento con el anterior.
 # Por ejemplo, dada la lista: `[1, 2, 3, 4]`, se espera que la salida sea una lista con los elementos `[3, 5, 7]`
+listaA = [1, 2, 3, 4]
+listaB = []
+
+for x in range(0, 3):  # si lo hago en rango 0 al 4  me va a dar error porque no hay ningun valor asignado al indice 4
+    if len(listaB) == 0:
+        sumaListas = listaA[x + 1] + listaA[x]
+        listaB.append(sumaListas)
+    else:
+        sumaListas = listaA[x + 1] + listaA[x]
+        listaB.append(sumaListas)
+
+print(listaB)
 
 # Ejercicio 3
 # Dado un string, mostrar por pantalla unicamente las vocales en formato Mayuscula
