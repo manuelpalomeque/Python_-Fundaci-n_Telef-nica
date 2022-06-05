@@ -54,14 +54,14 @@ print(vocalesMayusculas)
 # Ejercicio 4
 # Dada una lista de numeros, mostrar por genere una lista con todos los múltiplos de 7.
 # Por ejemplo, para la lista `[1, 2, 7, 10, 21]`, se muestran por pantalla los numeros `7` y `21`
-listaA = [1,2,7,10,21]
-listaB = []
+listaC = [1,2,7,10,21]
+listaD = []
 
-for n in listaA:
+for n in listaC:
     if n % 7 == 0:
-        listaB.append(n)
+        listaD.append(n)
 
-print(listaB)
+print(listaD)
 
 # Ejercicio 5
 # Contar cuántos elementos de la lista cumple alguna de las siguientes condiciones:
@@ -70,9 +70,24 @@ print(listaB)
 # ``` python
 # lista = ['a', 2, 5, 'B', 9, 'd', 4, 'o', 7, '%', 3.1, '&']
 # ```
+listaE = ['a', 2, 5, 'B', 9, 'd', 4, 'o', 7, '%', 3.1, '&']
+contTotal = 0
+contParEntero = 0
+contCarMinus = 0
+
+for elemento in listaE:
+    if type(elemento) == int and elemento % 2 == 0:
+        contParEntero += 1
+        contTotal += 1
+    elif type(elemento) == str and elemento.islower() == True:
+        contCarMinus += 1
+        contTotal += 1
+
+print(
+    'Existe un total de {} elementos que poseen dichas condiciones, {} son caracteres en minusculas y {} son numeros '
+    'enteros pares'.format(contTotal, contCarMinus, contParEntero))
 
 # Ejercicio 6
-
 # Obtener el módulo entre el máximo y el mínimo de la siguiente lista.
 # ```
 # lista = [893, 755, 708, 746, 801, 581, 187, 688, 492, 579, 469, 195, 918, 667, 7, 15, 212, 114, 635, 331]
