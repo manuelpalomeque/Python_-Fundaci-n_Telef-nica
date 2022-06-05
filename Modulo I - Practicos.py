@@ -92,5 +92,11 @@ print(
 # ```
 # lista = [893, 755, 708, 746, 801, 581, 187, 688, 492, 579, 469, 195, 918, 667, 7, 15, 212, 114, 635, 331]
 # ```
-# `result= 918%7 = 1`
+listaF = [893, 755, 708, 746, 801, 581, 187, 688, 492, 579, 469, 195, 918, 667, 7, 15, 212, 114, 635, 331]
+
+valorMax = max(listaF)
+valorMin = min(listaF)
+
+resultadoA = valorMax % valorMin
+print('El modulo entre el valor maximo: {}, y el valor minimo: {}, es igual a: {}'.format(valorMax,valorMin,resultadoA))
 
