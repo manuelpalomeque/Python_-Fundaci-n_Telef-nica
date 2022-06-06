@@ -161,3 +161,16 @@ numeroEntero = int(input('Ingrese el numero entero: '))
 numeroFlotante = float(numeroEntero)
 
 print(numeroFlotante, type(numeroFlotante))
+
+# Ejercicio 10
+# Desarrollar un programa que solicite al usuario los lados de un rectángulo y calcule su perímetro y su superficie.
+# Informar ambos resultados por pantalla
+
+largoR = float(input('ingrese el largo del rectangulo en metros: '))
+anchoR = float(input('ingrese el ancho del rectangulo en metros: '))
+
+perimetroR = (largoR * 2) + (anchoR * 2)
+superficieR = largoR * anchoR
+
+print('El perimetro es de {} metros, y la superficie es de {} m2'.format(perimetroR,superficieR))
+
