@@ -100,3 +100,21 @@ valorMin = min(listaF)
 resultadoA = valorMax % valorMin
 print('El modulo entre el valor maximo: {}, y el valor minimo: {}, es igual a: {}'.format(valorMax,valorMin,resultadoA))
 
+# Ejercicio 7
+# Pedir el ingreso por teclado de 3 valores numéricos entre 1 y 10 correspondientes a las notas de un alumno. En base
+# al promedio final de las tres notas, mostrar un mensaje por pantalla que indique si el alumno promociona la materia
+# (nota final 7,8,9 o 10), debe rendir final (nota final 4,5 o 6) o recursa (nota 1,2,3).
+
+valor1 = float(input('Ingrese la primer nota del alumno: '))
+valor2 = float(input('Ingrese la segunda nota del alumno: '))
+valor3 = float(input('Ingrese la tercer nota del alumno: '))
+
+suma1 = valor1 + valor2 + valor3
+promedio1 = suma1/3
+
+if promedio1 >= 7:
+    print('El alumno promociona la materia, su promedio es de {}'.format(promedio1))
+elif promedio1 >= 4 and promedio1 <= 6:
+    print('El alumno debe rendir el final, su promedio es de {}'.format(promedio1))
+else:
+    print('El alumno debe recursar la materia, su promedio es {}'.format(promedio1))
