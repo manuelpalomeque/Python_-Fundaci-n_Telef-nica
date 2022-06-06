@@ -152,3 +152,12 @@ puntajeEmpatado = cantidadEmpatados
 puntajeTotal = puntajeGanado + puntajeEmpatado
 
 print('El puntaje total es de: {} puntos'.format(puntajeTotal))
+
+# Ejercicio 9
+# Solicitar por teclado el ingreso de un número entero. Asignar dicho número a una variable, transformarla a coma
+# flotante y mostrarla por pantalla (valor y tipo de variable).
+
+numeroEntero = int(input('Ingrese el numero entero: '))
+numeroFlotante = float(numeroEntero)
+
+print(numeroFlotante, type(numeroFlotante))
