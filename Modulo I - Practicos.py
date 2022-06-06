@@ -118,3 +118,22 @@ elif promedio1 >= 4 and promedio1 <= 6:
     print('El alumno debe rendir el final, su promedio es de {}'.format(promedio1))
 else:
     print('El alumno debe recursar la materia, su promedio es {}'.format(promedio1))
+
+# Ejercicio 8
+# Pedir el ingreso por teclado de 3 valores numéricos entre 1 y 10 correspondientes a las notas de un alumno. En base al
+# promedio final de las tres notas, mostrar un mensaje por pantalla que indique si el alumno promociona la materia
+# (nota final 7,8,9 o 10), debe rendir final (nota final 4,5 o 6) o recursa (nota 1,2,3).
+
+valor4 = float(input('Ingrese la primer nota del alumno: '))
+valor5 = float(input('Ingrese la segunda nota del alumno: '))
+valor6 = float(input('Ingrese la tercer nota del alumno: '))
+
+sumaP = valor4 + valor5 + valor6
+promedio1 = sumaP/3
+
+if promedio1 >= 7:
+    print('El alumno promociona la materia, su promedio es de {}'.format(promedio1))
+elif promedio1 >= 4 and promedio1 <= 6:
+    print('El alumno debe rendir el final, su promedio es de {}'.format(promedio1))
+else:
+    print('El alumno debe recursar la materia, su promedio es {}'.format(promedio1))
