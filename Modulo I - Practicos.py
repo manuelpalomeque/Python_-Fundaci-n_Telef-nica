@@ -197,3 +197,14 @@ El resultado de la division es: {}
 El resultado de la potencia es: {}
 El resultado del resto es: {}
 '''.format(suma_,resta_,multiplicacion_,division_,potencia_,resto_))
+
+# Ejercicio 12
+# Si creamos tres listas. La primera contiene 4 números, la segunda contiene 5 letras y en la tercera le cargamos como
+# elementos las dos listas anteriores.
+# ¿Cuántos elementos contendrá la tercera lista? Demostrar mediante un breve código.
+
+lista_1 = [1,2,3,4]
+lista_2 = ['a','b','c','d','e']
+lista_3 = [lista_1,lista_2]
+
+print('La cantidad de elementos de la lista 3 son: {} elementos, los cuales son las listas 1 y 2: {}'.format(len(lista_3),lista_3))
