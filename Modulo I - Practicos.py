@@ -137,3 +137,18 @@ elif promedio1 >= 4 and promedio1 <= 6:
     print('El alumno debe rendir el final, su promedio es de {}'.format(promedio1))
 else:
     print('El alumno debe recursar la materia, su promedio es {}'.format(promedio1))
+
+# Ejercicio 8
+# Solicitar por teclado la cantidad de partidos ganados, empatados y perdidos de un determinado club de fútbol.
+# Calcular y mostrar el puntaje final sabiendo que cada partido ganado le otorga 3 puntos, cada partido empatado 1
+# punto y ningún punto por cada partido perdido.
+
+cantidadGanados = int(input('Ingrese la cantidad de partidos ganados: '))
+cantidadEmpatados = int(input('Ingrese la cantidad de partidos empatados: '))
+cantidadPerdidos = int(input('Ingrese la cantidad de partidos perdidos: '))
+
+puntajeGanado = cantidadGanados * 3
+puntajeEmpatado = cantidadEmpatados
+puntajeTotal = puntajeGanado + puntajeEmpatado
+
+print('El puntaje total es de: {} puntos'.format(puntajeTotal))
