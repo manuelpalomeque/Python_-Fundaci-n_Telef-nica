@@ -174,3 +174,26 @@ superficieR = largoR * anchoR
 
 print('El perimetro es de {} metros, y la superficie es de {} m2'.format(perimetroR,superficieR))
 
+# Ejercicio 11
+# Pedir al usuario que ingrese por teclado dos números reales y utilizarlos para realizar todas las operaciones
+# aritméticas vistas (suma, resta, multiplicación, división, potencia, división entera y resto).
+# Mostar todos los resultados por pantalla (un resultado por línea) con su respectiva leyenda aclarando de que
+# operación se trata.
+
+real1 = int(input('Ingrese el primer numero: '))
+real2 = int(input('Ingrese el segundo numero: '))
+
+suma_ = real1 + real2
+resta_ = real1 - real2
+multiplicacion_ = real1 * real2
+division_ = real1 / real2
+potencia_ = real1 ** real2
+resto_ = real1 % real2
+
+print('''El resultado de la suma es: {}
+El resultado de la resta es: {}
+El resultado de la multiplicacion es: {}
+El resultado de la division es: {}
+El resultado de la potencia es: {}
+El resultado del resto es: {}
+'''.format(suma_,resta_,multiplicacion_,division_,potencia_,resto_))
