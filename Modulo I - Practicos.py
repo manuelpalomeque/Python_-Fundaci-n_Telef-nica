@@ -324,3 +324,27 @@ def calculadorFactorial(numFactorial):
 
 prueba = calculadorFactorial(numFactorial)
 print('Para el valor ingresado: {} , el factorial es: {}'.format(numFactorial,prueba))
+
+# Ejercicio 18
+# Escribir una función para determinar si un número entero, ingresado por teclado es un número primo. Un número primo
+# es aquel que solo tiene como divisores enteros (resto igual a cero) al número 1 y a sí mismo, por ejemplo,
+# el número 5.
+
+num_analizar = int(input('Ingrese un numero: '))
+
+def esEntero(num_analizar):
+    cant = 0
+    g = 1
+    while g <= num_analizar:
+        if num_analizar % g == 0:
+            cant += 1
+        g += 1
+    if cant == 2:
+        primo_t = 'es primo '
+        return primo_t
+    else:
+        primo_t = 'no es primo'
+        return primo_t
+
+prueba1 = esEntero(num_analizar)
+print(prueba1)
