@@ -348,3 +348,36 @@ def esEntero(num_analizar):
 
 prueba1 = esEntero(num_analizar)
 print(prueba1)
+
+# Ejercicio 19
+# Escribir una función que encuentre los números primos comprendidos entre dos números enteros ingresados por teclado.
+
+v1 = int(input('Ingrese el primer valor: '))
+v2 = int(input('Ingrese el segundo valor: '))
+
+def primosB(v1, v2):
+    if v1 > v2:
+        v_menor = v2
+        v_mayor = v1
+    else:
+        v_menor = v1
+        v_mayor = v2
+
+    estosSonPrimos = []
+
+    for u in range(v_menor, v_mayor + 1):
+        cant = 0
+        g = 1
+        while g <= u:
+            if u % g == 0:
+                cant += 1
+            g += 1
+        if cant == 2:
+            estosSonPrimos.append(u)
+
+    return estosSonPrimos
+
+prueba_1a = primosB(v1, v2)
+print('Para los valores: {} y {}, los numeros primos son: {}'.format(v1, v2, prueba_1a))
+
+
