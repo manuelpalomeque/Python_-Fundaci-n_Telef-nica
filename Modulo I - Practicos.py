@@ -448,3 +448,33 @@ while cc < cuantas_palabras:
     cc += 1
 
 print('Se completo la cantidad de: {} palabras deseadas. Las cuales son: {}'.format(cuantas_palabras, lista_palIngresadas))
+
+# Ejercicio 22.
+# Escribir un programa que le solicite al usuario ingresar 10 palabras, luego le pida ingresar una más y le diga si esa
+# última palabra ingresada se encuentra entre las 10 palabras ingresadas anteriormente.
+
+ingreso_usuario = input('Ingrese una palabra: ')
+lista_palUsuario = []
+c_pal = 0
+
+while c_pal < 10:
+    if len(lista_palUsuario) == 0:
+        lista_palUsuario.append(ingreso_usuario)
+        c_pal += 1
+    else:
+        ingreso_usu1 = input('Ingrese una palabra: ')
+        lista_palUsuario.append(ingreso_usu1)
+        c_pal += 1
+
+palabra11 = input('Ingrese la palabra que quiere ver si esta en el listado: ')
+esta_lista = False
+
+for pal in lista_palUsuario:
+    if pal == palabra11:
+        esta_lista = True
+
+if esta_lista == True:
+    print('La palabra {}, fue ingresada anteriormente'.format(palabra11))
+else:
+    print('La palabra {}, no fue ingresada a la lista'.format(palabra11))
+
