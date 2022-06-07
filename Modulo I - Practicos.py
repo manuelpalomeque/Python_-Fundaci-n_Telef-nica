@@ -303,3 +303,24 @@ voc = vocalesFrase(frase_)
 cons =  consonantesFrase(frase_)
 
 print('la frase ingresada fue: "{} ", donde las vocales son: {} , y las consonantes son: {}'.format(frase_,voc,cons))
+
+# Ejercicio 17
+# Escribir una función en Python para calcular el factorial de un número entero positivo. Basarse en la siguiente
+# definición: El factorial de un número entero positivo n, se define como el producto de todos los números enteros
+# positivos menores o iguales a n. El factorial de cero es 1. Por ejemplo, el factorial de 4 será 4x3x2x1 = 24. No
+# utilizar ninguna función ni módulo matemático, solo lo visto en clase.
+
+numFactorial = int(input('Ingrese un numero entero y positivo: '))
+
+def calculadorFactorial(numFactorial):
+    if numFactorial == 0 or numFactorial == 1:
+        mostrar = 'El factorial es igual a: 1'
+        return mostrar
+    else:
+        factorial = 1
+        for n in range(1,numFactorial+1):
+            factorial *= n
+        return factorial
+
+prueba = calculadorFactorial(numFactorial)
+print('Para el valor ingresado: {} , el factorial es: {}'.format(numFactorial,prueba))
