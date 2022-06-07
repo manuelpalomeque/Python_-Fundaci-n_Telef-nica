@@ -251,3 +251,22 @@ for k in range(numMenor_, numMayor_ + 1):
         contPar += 1
 
 print('Entre {} y {} se encontraron: {} números pares'.format(numMenor_, numMayor_, contPar))
+
+# Ejercicio 15
+# Escribir un programa que permita al usuario ingresar por teclado tantos números enteros como desee. Cuando no quiera
+# ingresar más números, deberá ingresar el cero. A continuación, determinar cuál de los números ingresados es el mayor y
+# cuál es el menor. Mostrar ambos por pantalla.
+
+ingreso_ = int(input('Ingrese un los valores que desee, para finalizar ingrese 0 (cero): '))
+
+num_menorB = ingreso_
+num_mayorB = ingreso_
+
+while ingreso_ != 0:
+    if ingreso_ < num_menorB:
+        num_menorB = ingreso_
+    elif ingreso_ > num_mayorB:
+        num_mayorB = ingreso_
+    ingreso_ = int(input('Ingrese un los valores que desee, para finalizar ingrese 0 (cero): '))
+
+print('El numero menor es: {} y el numero mayor es: {}'.format(num_menorB, num_mayorB))
