@@ -208,3 +208,25 @@ lista_2 = ['a','b','c','d','e']
 lista_3 = [lista_1,lista_2]
 
 print('La cantidad de elementos de la lista 3 son: {} elementos, los cuales son las listas 1 y 2: {}'.format(len(lista_3),lista_3))
+
+# Ejercicio 13
+# Escribir un programa que pida ingresar un número entero mayor que cero por teclado.
+# Verificar si el número ingresado es múltiplo de 2, 3, 4, 5, 6, 7,8 o 9.
+# Armar una lista con los números encontrados (por ejemplo, si el número ingresado es múltiplo de 3,6 y 7, armamos una
+# lista que contenga estos tres números).
+# Mostrar la lista por pantalla, ordenada de mayor a menor.
+# En caso de que el número ingresado no sea múltiplo de estos números, mostrar por pantalla el mensaje “No se
+# encontraron divisores exactos”.
+
+num_ = float(input('Ingrese un numero mayor que 0: '))
+lista_divisores = []
+
+for j in range(2, 10):
+    if num_ % j == 0:
+        lista_divisores.append(j)
+
+if len(lista_divisores) == 0:
+    print('No se encontraron divisores exactos')
+else:
+    lista_divisores.reverse()
+    print('Los divisores son: {}'.format(lista_divisores))
