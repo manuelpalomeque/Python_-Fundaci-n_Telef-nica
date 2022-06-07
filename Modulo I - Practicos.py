@@ -523,8 +523,11 @@ elif opcion_elegida == 2:
     print('Usted eligio Asado, se lo prepareremos!')
 elif opcion_elegida == 3:
     print('Usted eligio Pastas, se la prepareremos!')
-else:
+elif opcion_elegida == 4:
     print('Usted eligio Ensalada, se la prepareremos!')
+else:
+    print('Opcion no valida, por favor intente nuevamente')
+
 
 
 
