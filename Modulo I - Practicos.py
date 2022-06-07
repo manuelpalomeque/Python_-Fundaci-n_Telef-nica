@@ -528,6 +528,71 @@ elif opcion_elegida == 4:
 else:
     print('Opcion no valida, por favor intente nuevamente')
 
+# Ejercicio 25.
+# Modificar el ejercicio anterior, para que el usuario pueda en cada opción del programa, ingresar dos números enteros y
+# que en cada opción a esos números se les aplique una suma, una resta, una división o una multiplicación. Agregar
+# una nueva opción para que el programa funcione permanentemente hasta que el usuario la seleccione y el programa
+# finalice su ejecución.
 
+opcion_elegidaA = int(input('''Menú:
+1 - Sumar
+2 - Restar
+3 - Dividir
+4 - Multiplicar
+
+Por favor, indique el numero de la opcion que desea: '''))
+
+fin_ciclo = 'si'
+
+if opcion_elegidaA == 1:
+    print('Usted eligio SUMAR')
+
+    while fin_ciclo == 'si':
+        val_1 = float(input('Por favor ingrese el primer numero: '))
+        val_2 = float(input('Por favor ingrese el segundo numero: '))
+        resul_suma = val_1 + val_2
+        print('El resultado es {}'.format(resul_suma))
+        ctl = input('Desea continuar? si/no: ')
+        if ctl == 'no':
+            fin_ciclo = 'no'
+
+elif opcion_elegidaA == 2:
+    print('Usted eligio RESTAR')
+
+    while fin_ciclo == 'si':
+        val_1 = float(input('Por favor ingrese el primer numero: '))
+        val_2 = float(input('Por favor ingrese el segundo numero: '))
+        resul_res = val_1 - val_2
+        print('El resultado es {}'.format(resul_res))
+        ctl = input('Desea continuar? si/no: ')
+        if ctl == 'no':
+            fin_ciclo = 'no'
+
+elif opcion_elegidaA == 3:
+    print('Usted eligio MULTIPLICAR')
+
+    while fin_ciclo == 'si':
+        val_1 = float(input('Por favor ingrese el primer numero: '))
+        val_2 = float(input('Por favor ingrese el segundo numero: '))
+        resul_mul = val_1 * val_2
+        print('El resultado es {}'.format(resul_mul))
+        ctl = input('Desea continuar? si/no: ')
+        if ctl == 'no':
+            fin_ciclo = 'no'
+
+elif opcion_elegidaA == 4:
+    print('Usted eligio DIVIDIR')
+
+    while fin_ciclo == 'si':
+        val_1 = float(input('Por favor ingrese el primer numero: '))
+        val_2 = float(input('Por favor ingrese el segundo numero: '))
+        resul_div = val_1 / val_2
+        print('El resultado es {}'.format(resul_div))
+        ctl = input('Desea continuar? si/no: ')
+        if ctl == 'no':
+            fin_ciclo = 'no'
+
+else:
+    print('Opcion no valida, por favor intente nuevamente')
 
 
