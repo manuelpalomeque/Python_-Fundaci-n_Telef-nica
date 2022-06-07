@@ -270,3 +270,36 @@ while ingreso_ != 0:
     ingreso_ = int(input('Ingrese un los valores que desee, para finalizar ingrese 0 (cero): '))
 
 print('El numero menor es: {} y el numero mayor es: {}'.format(num_menorB, num_mayorB))
+
+# Ejercicio 16
+# Escribir un programa que pida al usuario, que ingrese una frase por teclado. El programa deberá tener dos funciones,
+# una que reciba la frase y devuelva solo las vocales de dicha frase y otra función que reciba la misma frase pero que
+# devuelva solo las consonantes. Mostrar por pantalla la frase original ingresada por el usuario, las vocales y las
+# consonantes devueltas por sus respectivas funciones.
+
+frase_ = input('Ingrese la frase: ')
+
+def vocalesFrase(frase_):
+    frase_min = frase_.upper()
+    vocales_T = ['A','E','I','O','U']
+    vocales_f = []
+    for let in frase_min:
+        for e in vocales_T:
+            if let == e:
+                vocales_f.append(let)
+    return vocales_f
+
+def consonantesFrase(frase_):
+    frase_min = frase_.upper()
+    consonantes_T = ['B','C','D','F','G','H','J','K','L','M','N','Ñ','P','Q','R', 'S','T','V','X','Z','W','Y']
+    consonantes_F = []
+    for let in frase_min:
+        for e in consonantes_T:
+            if let == e:
+                consonantes_F.append(let)
+    return consonantes_F
+
+voc = vocalesFrase(frase_)
+cons =  consonantesFrase(frase_)
+
+print('la frase ingresada fue: "{} ", donde las vocales son: {} , y las consonantes son: {}'.format(frase_,voc,cons))
