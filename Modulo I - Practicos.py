@@ -434,3 +434,17 @@ elif cuantosElementos > 1:
     print('los numeros que mas se repiten son: {}, con un total de: {} repeticiones cada uno'.format(datosATrabajar,
     cantRepeMax))
 
+# Ejercicio 21.
+# Escribir un programa que le pregunte al usuario cuantas palabras desea ingresar, luego le permita ingresarlas todas y
+# finalmente mostrarlas por pantalla.
+
+cuantas_palabras = int(input('Cuantas palabras desea ingresar?: '))
+lista_palIngresadas = []
+cc = 0
+
+while cc < cuantas_palabras:
+    palabras_In = input('Ingrese la palabra: ')
+    lista_palIngresadas. append(palabras_In)
+    cc += 1
+
+print('Se completo la cantidad de: {} palabras deseadas. Las cuales son: {}'.format(cuantas_palabras, lista_palIngresadas))
