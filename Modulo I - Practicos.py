@@ -504,3 +504,27 @@ for nr in lista_numEnteR:
 
 print('''La lista  con los 10 numeros son: {}
 La lista con la palabra PAR: {}'''.format(lista_conPares, lista_numEnteR))
+
+# Ejercicio 24.
+# Hacer un menú de cuatro opciones, que le permita al usuario navegar por cuatro módulos diferentes del programa.
+# Mostrar en cada módulo un título diferente para verificar que funciona correctamente
+
+opcion_elegida = int(input('''Menú:
+1 - Pizza
+2 - Asado
+3 - Pastas
+4 - Ensalada
+
+Por favor, indique el numero de la opcion que desea: '''))
+
+if opcion_elegida == 1:
+    print('Usted eligio Pizza, se la prepareremos!')
+elif opcion_elegida == 2:
+    print('Usted eligio Asado, se lo prepareremos!')
+elif opcion_elegida == 3:
+    print('Usted eligio Pastas, se la prepareremos!')
+else:
+    print('Usted eligio Ensalada, se la prepareremos!')
+
+
+
