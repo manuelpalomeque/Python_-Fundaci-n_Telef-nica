@@ -478,3 +478,29 @@ if esta_lista == True:
 else:
     print('La palabra {}, no fue ingresada a la lista'.format(palabra11))
 
+# Ejercicio 23.
+# Crear una lista con 10 números enteros y mostrarlos por pantalla.Luego reemplazar todos los números pares por la
+# palabra PAR y volver a mostrar la lista por pantalla
+
+import random
+
+lista_numEnteR = []
+
+while len(lista_numEnteR) < 10:
+    lista_numEnteR.append(random.randrange(1, 150))
+
+lista_conPares = []
+for nrs in lista_numEnteR:
+    lista_conPares.append(nrs)
+
+cont_ind = 0
+
+for nr in lista_numEnteR:
+    if nr % 2 == 0:
+        lista_numEnteR[cont_ind] = 'PAR'
+        cont_ind += 1
+    else:
+        cont_ind += 1
+
+print('''La lista  con los 10 numeros son: {}
+La lista con la palabra PAR: {}'''.format(lista_conPares, lista_numEnteR))
