@@ -380,4 +380,57 @@ def primosB(v1, v2):
 prueba_1a = primosB(v1, v2)
 print('Para los valores: {} y {}, los numeros primos son: {}'.format(v1, v2, prueba_1a))
 
+# Ejercicio 20
+# Escribir un programa que llene una lista con 50 números al azar y muestre por pantalla el número (o números) que
+# más se repite
+
+import random
+
+listaAzar = []
+b = 1
+
+while b <= 50:
+    rand = random.randrange(1, 50)
+    listaAzar.append(rand)
+    b += 1
+
+listaRepeticiones = []
+
+for v in listaAzar:
+    repe_canti = listaAzar.count(v)
+    listaRepeticiones.append(repe_canti)
+
+cantRepeMax = max(listaRepeticiones)
+
+cuanRepesVM = listaRepeticiones.count(cantRepeMax)
+cuantosElementos = cuanRepesVM / cantRepeMax
+
+if cuantosElementos == 1:
+
+    indice12 = listaRepeticiones.index(cantRepeMax)
+    numeroRepeMasVeces = listaAzar[indice12]
+    print('El numero que mas se repite es: {}, el cual se repite: {} veces'.format(numeroRepeMasVeces, cantRepeMax))
+
+elif cuantosElementos > 1:
+    lista_indice = []
+    lista_numerosMasRepetidos = []
+    vueltaIndice = 0
+
+    for re in listaRepeticiones:
+        if re == cantRepeMax:
+            lista_indice.append(vueltaIndice)
+            vueltaIndice += 1
+        else:
+            vueltaIndice += 1
+
+    for ind in lista_indice:
+        num_ero = listaAzar[ind]
+        lista_numerosMasRepetidos.append(num_ero)
+
+    datosATrabajar = []
+    for item in lista_numerosMasRepetidos:
+        if item not in datosATrabajar:
+            datosATrabajar.append(item)
+    print('los numeros que mas se repiten son: {}, con un total de: {} repeticiones cada uno'.format(datosATrabajar,
+    cantRepeMax))
 
