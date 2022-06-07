@@ -230,3 +230,24 @@ if len(lista_divisores) == 0:
 else:
     lista_divisores.reverse()
     print('Los divisores son: {}'.format(lista_divisores))
+
+# Ejercicio 14
+# Pedirle al usuario que ingrese dos números enteros por teclado y contar cuantos números pares hay entre ambos valores
+# ingresados.
+
+num_entero1 = int(input('Ingrese el primer numero: '))
+num_entero2 = int(input('Ingrese el segundo numero: '))
+contPar = 0
+
+if num_entero1 < num_entero2:
+    numMenor_ = num_entero1
+    numMayor_ = num_entero2
+else:
+    numMenor_ = num_entero2
+    numMayor_ = num_entero1
+
+for k in range(numMenor_, numMayor_ + 1):
+    if k % 2 == 0:
+        contPar += 1
+
+print('Entre {} y {} se encontraron: {} números pares'.format(numMenor_, numMayor_, contPar))
