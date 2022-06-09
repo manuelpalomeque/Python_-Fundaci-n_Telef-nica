@@ -150,9 +150,7 @@ cantidadGanados = int(input('Ingrese la cantidad de partidos ganados: '))
 cantidadEmpatados = int(input('Ingrese la cantidad de partidos empatados: '))
 cantidadPerdidos = int(input('Ingrese la cantidad de partidos perdidos: '))
 
-puntajeGanado = cantidadGanados * 3
-puntajeEmpatado = cantidadEmpatados
-puntajeTotal = puntajeGanado + puntajeEmpatado
+puntajeTotal =  cantidadGanados * 3 + puntajeEmpatado
 
 print('El puntaje total es de: {} puntos'.format(puntajeTotal))
 
