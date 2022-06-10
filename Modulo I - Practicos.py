@@ -161,7 +161,7 @@ print('El puntaje total es de: {} puntos'.format(puntajeTotal))
 numeroEntero = int(input('Ingrese el numero entero: '))
 numeroFlotante = float(numeroEntero)
 
-print(numeroFlotante, type(numeroFlotante))
+print('En numero ingresado es: {} y su nuevo tipo es: {}'.format(numeroEntero, type(numeroFlotante)))
 
 # Ejercicio 10
 # Desarrollar un programa que solicite al usuario los lados de un rectángulo y calcule su perímetro y su superficie.
